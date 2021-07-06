@@ -2,7 +2,7 @@ import Styles from './styles.module.css'
 import Logo from '../../assets/logo.svg'
 import HamIcon from '../../assets/icon-hamburger.svg'
 import CloseIcon from '../../assets/icon-close.svg'
-import { IconButton, makeStyles } from '@material-ui/core'
+import { IconButton } from '@material-ui/core'
 import { useState } from 'react'
 
 export default function Header() {
