@@ -10,13 +10,49 @@
   background: url('../../assets/desktop/image-hero.jpg') no-repeat
 }
 
+aside{
+  width: 375px;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: 0.3s;
+  padding: 6.4rem 5rem;
 
-header {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.headerAside {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   width: 100%;
+}
+
+.titles {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: auto 0 auto 9rem;
+}
+
+
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.icon{
+  display: none;
 }
 
 .menu {
@@ -28,6 +64,7 @@ header {
   font-weight: 400;
   font-size: 1.5rem;
   color: var(--white);
+  margin-left: auto;
 }
 
 li {
@@ -67,5 +104,27 @@ h1 {
 
   header img {
     transform: scale(0.5);
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .description{
+    width: 100%;
+  }
+
+  .displayed {
+    transform: none;
+  }
+  
+  .noDisplayed {
+    transform: translateX(100%);
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
