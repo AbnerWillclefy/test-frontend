@@ -1,0 +1,37 @@
+.container { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerContainer {
+  width: 100%;
+  background: #000;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 15rem;
+  margin-top: 15rem;
+}
+
+.footerContainerMobile {
+  width: 100%;
+  background: #000;
+  display: none;
+  gap: 3rem;
+  padding: 6rem 15rem;
+  margin-top: 15rem;
+}
+
+@media (max-width: 375px) {
+  .footerContainer {
+    display: none;
+  }
+
+  .footerContainerMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

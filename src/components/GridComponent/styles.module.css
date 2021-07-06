@@ -1,0 +1,28 @@
+.container {
+  padding: 0 16.5rem;
+}
+
+.containerMobile {
+  display: none;
+}
+
+.gridTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 375px) {
+  .container{
+    display: none;
+  }
+
+  .containerMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+}

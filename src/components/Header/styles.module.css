@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  height: 65rem;
+  padding: 6.4rem 16.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url('../../assets/desktop/image-hero.jpg') no-repeat
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3.4rem;
+
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+li {
+  cursor: pointer;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.4rem;
+
+  padding: 3rem 4rem;
+  margin-bottom: 8rem;
+
+  width: 60rem;
+
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+h1 {
+  font-weight: 300;
+}
+
+@media (max-width: 375px) {
+  .container{
+    background: url('../../assets/mobile/image-hero.jpg') no-repeat;
+    padding: 6.4rem 5rem;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header img {
+    transform: scale(0.5);
+  }
+}
