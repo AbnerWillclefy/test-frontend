@@ -22,11 +22,11 @@ export default function Header() {
         <header>
           <img src={Logo} alt='Logotipo da empresa'/>
           <ul className={Styles.menu}>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#'>Careers</a></li>
+            <li><a href='#'>Events</a></li>
+            <li><a href='#creations'>Products</a></li>
+            <li><a href='#footer'>Support</a></li>
           </ul>
           <IconButton onClick={handleDisplayChange}><img src={HamIcon} alt='' className={Styles.icon}/></IconButton>
         </header>

@@ -68,6 +68,11 @@ p {
     text-align: center;
   }
 
+  p {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
   div.whiteContainer p {
     text-align: center;
   }

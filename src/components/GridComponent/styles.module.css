@@ -6,6 +6,104 @@
   display: none;
 }
 
+.gridDesktop{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.gridMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 8rem 0 6rem 0;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+figure img {
+  position: relative;
+  z-index: 0;
+}
+
+figcaption {
+  position: absolute;
+  z-index: 200;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.3);
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 32rem 5rem 2rem 3rem;
+
+  height: 100%;
+  width: 100%;
+}
+
+.figureMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageMobile {
+  width: 80%;
+}
+
+.figcaptionMobile {
+  position: absolute;
+  z-index: 200;
+  color: #fff;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+  
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 5rem 27rem 5rem 5rem;
+  width: 80%;
+}
+
+figcaption p {
+  color: #fff;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+figcaption:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+figcaption:hover p{
+  color: #000;
+}
+
 .gridTitle {
   display: flex;
   align-items: center;

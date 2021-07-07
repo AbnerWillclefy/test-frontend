@@ -5,7 +5,7 @@ import Styles from './styles.module.css'
 export default function Main() {
 
   return (
-    <main>
+    <main id='about'>
       <div className={Styles.image} />
       <div className={Styles.whiteContainer}>
         <h2>THE LEADER IN INTERACTIVE VR</h2>
