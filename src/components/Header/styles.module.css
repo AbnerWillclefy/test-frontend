@@ -7,10 +7,10 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background: url('../../assets/desktop/image-hero.jpg') no-repeat
+  background: url('../../assets/desktop/image-hero.jpg') no-repeat;
 }
 
-aside{
+aside {
   width: 375px;
   height: 100vh;
   background-color: #000;
@@ -24,7 +24,6 @@ aside{
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .headerAside {
   display: flex;
@@ -42,7 +41,6 @@ aside{
   margin: auto 0 auto 9rem;
 }
 
-
 .container header {
   display: flex;
   align-items: center;
@@ -51,7 +49,7 @@ aside{
   width: 100%;
 }
 
-.icon{
+.icon {
   display: none;
   background: none;
   border: none;
@@ -83,7 +81,7 @@ h1 {
 }
 
 @media (max-width: 375px) {
-  .container{
+  .container {
     background: url('../../assets/mobile/image-hero.jpg') no-repeat;
     padding: 6.4rem 5rem;
     align-items: center;
@@ -103,14 +101,14 @@ h1 {
     justify-content: center;
   }
 
-  .description{
+  .description {
     width: 100%;
   }
 
   .displayed {
     transform: none;
   }
-  
+
   .noDisplayed {
     transform: translateX(100%);
   }

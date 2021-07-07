@@ -1,4 +1,4 @@
-.container { 
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,7 +65,7 @@
     display: none;
   }
 
-  .footerContainerMobile{
+  .footerContainerMobile {
     display: flex;
     flex-direction: column;
     align-items: center;

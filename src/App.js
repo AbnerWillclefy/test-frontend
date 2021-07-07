@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Main from './components/Main';
-import GridComponent from './components/GridComponent'
+import GridComponent from './components/GridComponent';
 import FooterComponent from './components/FooterComponent';
 import { makeStyles } from '@material-ui/core';
 
@@ -12,8 +12,8 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-  }
-})
+  },
+});
 
 function App() {
   const classes = useStyles();
