@@ -53,18 +53,9 @@ aside{
 
 .icon{
   display: none;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 3.4rem;
-
-  font-family: 'Alata', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: var(--white);
-  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 li {
@@ -98,7 +89,7 @@ h1 {
     align-items: center;
   }
 
-  .menu {
+  .container header ul {
     display: none;
   }
 
@@ -107,7 +98,9 @@ h1 {
   }
 
   .icon {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .description{

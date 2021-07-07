@@ -19,30 +19,6 @@ a{
   color: inherit;
 }
 
-li{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-li::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  background: var(--white);
-  display: none;
-  border-radius: 1px;
-
-  bottom: -3px;
-}
-
-li:hover::after {
-  display: flex;
-}
-
 :root {
   --white:hsl(0, 0%, 100%);
   --black:hsl(0, 0%, 0%);

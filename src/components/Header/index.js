@@ -4,6 +4,7 @@ import HamIcon from '../../assets/icon-hamburger.svg'
 import CloseIcon from '../../assets/icon-close.svg'
 import { IconButton } from '@material-ui/core'
 import { useState } from 'react'
+import NavMenu from '../NavMenu'
 
 export default function Header() {
   const [display, setDisplay] = useState(false)
@@ -21,14 +22,8 @@ export default function Header() {
       <div className={Styles.container}>
         <header>
           <img src={Logo} alt='Logotipo da empresa'/>
-          <ul className={Styles.menu}>
-            <li><a href='#about'>About</a></li>
-            <li><a href='#'>Careers</a></li>
-            <li><a href='#'>Events</a></li>
-            <li><a href='#creations'>Products</a></li>
-            <li><a href='#footer'>Support</a></li>
-          </ul>
-          <IconButton onClick={handleDisplayChange}><img src={HamIcon} alt='' className={Styles.icon}/></IconButton>
+          <NavMenu/>
+          <button onClick={handleDisplayChange} className={Styles.icon}><img src={HamIcon} alt=''/></button>
         </header>
         <div className={Styles.description}>
           <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>

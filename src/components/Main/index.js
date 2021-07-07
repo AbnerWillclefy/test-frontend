@@ -1,5 +1,3 @@
-import ImageVR from '../../assets/desktop/image-interactive.jpg'
-import ImageVRMobile from '../../assets/mobile/image-interactive.jpg'
 import Styles from './styles.module.css'
 
 export default function Main() {
