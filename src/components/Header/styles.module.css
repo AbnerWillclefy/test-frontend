@@ -18,7 +18,7 @@ aside {
   top: 0;
   z-index: 100;
   transition: 0.3s;
-  padding: 6.4rem 5rem;
+  padding: 5rem 6rem;
 
   display: none;
   flex-direction: column;
@@ -37,8 +37,30 @@ aside {
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  margin: auto 0 auto 9rem;
+  gap: 6rem;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.titles a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titles a::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.titles a:hover::after {
+  width: 50%;
 }
 
 .container header {
@@ -85,14 +107,11 @@ h1 {
     background: url('../../assets/mobile/image-hero.jpg') no-repeat;
     padding: 6.4rem 5rem;
     align-items: center;
+    height: 100rem;
   }
 
   .container header ul {
     display: none;
-  }
-
-  header img {
-    transform: scale(0.5);
   }
 
   .icon {
@@ -101,8 +120,14 @@ h1 {
     justify-content: center;
   }
 
+  .logo {
+    width: 50%;
+  }
+
   .description {
     width: 100%;
+    font-size: 4rem;
+    margin-bottom: 22rem;
   }
 
   .displayed {

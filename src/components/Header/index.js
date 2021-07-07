@@ -1,9 +1,13 @@
+import { useState } from 'react';
+
 import Styles from './styles.module.css';
+
 import Logo from '../../assets/logo.svg';
 import HamIcon from '../../assets/icon-hamburger.svg';
 import CloseIcon from '../../assets/icon-close.svg';
+
 import { IconButton } from '@material-ui/core';
-import { useState } from 'react';
+
 import NavMenu from '../NavMenu';
 
 export default function Header() {
@@ -21,7 +25,7 @@ export default function Header() {
     <>
       <div className={Styles.container}>
         <header>
-          <img src={Logo} alt="Logotipo da empresa" />
+          <img src={Logo} alt="Company logo" className={Styles.logo} />
           <NavMenu />
           <button onClick={handleDisplayChange} className={Styles.icon}>
             <img src={HamIcon} alt="" />
@@ -33,17 +37,31 @@ export default function Header() {
       </div>
       <aside className={display ? Styles.displayed : Styles.noDisplayed}>
         <header className={Styles.headerAside}>
-          <img src={Logo} alt="Logotipo da empresa" />
+          <img src={Logo} alt="Company logo" className={Styles.logo} />
           <IconButton onClick={handleDisplayChange}>
-            <img src={CloseIcon} alt="" className={Styles.icon} />
+            <img
+              src={CloseIcon}
+              alt="Close Menu Icon"
+              className={Styles.icon}
+            />
           </IconButton>
         </header>
         <div className={Styles.titles}>
-          <h2>ABOUT</h2>
-          <h2>CAREERS</h2>
-          <h2>EVENTS</h2>
-          <h2>PRODUCTS</h2>
-          <h2>SUPPORT</h2>
+          <a href="#about" onClick={handleDisplayChange}>
+            ABOUT
+          </a>
+          <a href="#careers" onClick={handleDisplayChange}>
+            CAREERS
+          </a>
+          <a href="#events" onClick={handleDisplayChange}>
+            EVENTS
+          </a>
+          <a href="#creationsMobile" onClick={handleDisplayChange}>
+            PRODUCTS
+          </a>
+          <a href="#footerMobile" onClick={handleDisplayChange}>
+            SUPPORT
+          </a>
         </div>
       </aside>
     </>

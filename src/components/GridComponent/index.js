@@ -109,7 +109,7 @@ export default function GridComponent() {
         </div>
       </div>
 
-      <div id="creations" className={Styles.containerMobile}>
+      <div id="creationsMobile" className={Styles.containerMobile}>
         <h2 className={Styles.titleMobile}>OUR CREATIONS</h2>
         <div className={Styles.gridMobile}>
           {imagesMobile.map((value, index) => {
